@@ -24,6 +24,10 @@ body {
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none; 
+}
+
 .hero {
   padding: 140px 20px 80px;
   max-width: 800px;
