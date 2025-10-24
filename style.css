@@ -1,0 +1,158 @@
+:root {
+  --bg: #0e0012;
+  --text: #f3e8ff;
+  --accent-start: #7c3aed;
+  --accent-end: #a855f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  padding: 140px 20px 80px;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hero span {
+  color: var(--accent-end);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.subtext {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.6;
+  margin-top: 25px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section {
+  margin-top: 40px;
+  text-align: center;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color:  #ffffff;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.7;
+  color: #e9d5ff;
+}
+
+.btn-group {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-slide {
+  position: relative;
+  display: inline-block;
+  padding: 14px 40px;
+  border: 2px solid var(--accent-start);
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 40px;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.btn-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.btn-slide:hover {
+  color: #fff;
+}
+
+.btn-slide:hover::before {
+  left: 0;
+}
+
+#projects {
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 50px 60px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(168, 85, 247, 0.2);
+}
+
+footer {
+  padding: 40px;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  text-align: center;
+  width: 100%;
+}
