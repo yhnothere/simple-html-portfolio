@@ -3,47 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple HTML Portfolio</title>
+  <title>Minimal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <h1>HELLO, I'M <span>YU HENG</span></h1>
-    <p class="subtitle">
-        COMPUTER SCIENCE UNDERGRADUATE <br />
-        & ASPIRING SOFTWARE DEVELOPER
-    </p>
-    <p class="subtext">
-        This is a mini webpage inspired by <strong>BRUNO SIMON</strong>, created as part of a display project 
-        to showcase my work on this macbook you're seeing here *winky face*.
-    </p>
-    <div class="about-section">
-    <h3>So, a little about me</h3>
-    <p>
-        I’ve always been fascinated by web development — it’s this unique blend of art and logic 
-        where creativity meets code. I love the process of transforming an idea into something 
-        interactive and visually engaging, and I enjoy experimenting with designs that feel both 
-        functional and expressive. For me, it’s not just about building websites, but about crafting 
-        experiences that connect people and technology.
-    </p>
-    <div class="btn-group">
-      <a href="https://www.linkedin.com/in/yuheng-toh/" target="_blank" class="btn-slide">LINKEDIN</a>
-      <a href="mailto:rixoth@gmail.com" class="btn-slide">CONTACT@RIXOTH@GMAIL.COM</a>
+  <header class="navbar">
+    <div class="menu-container">
+      <button class="menu-btn">☰</button>
+      <div class="dropdown">
+        <a href="#">HOME</a>
+        <a href="#">INFO</a>
+        <a href="#">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+      </div>
     </div>
   </header>
 
-    <section id="projects">
-    <h2>PROJECT</h2>
+  <section class="hero">
+    <div class="hero-frame">
+      <h1>PORTFOLIO</h1>
+      <p class="hero-subtitle">SIMPLE & MINIMALISTIC</p>
+    </div>
+
+    <div class="btn-group">
+      <a href="#" class="btn-slide">CONTACT</a>
+      <a href="#" class="btn-slide">LINKEDIN</a>
+      <a href="#" class="btn-slide">GITHUB</a>
+      <a href="#" class="btn-slide">RESUME</a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>SO A LITTLE ABOUT ME</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>PROJECTS</h2>
     <div class="projects-container">
-      <div class="project-card">Placeholder One</div>
-      <div class="project-card">Placeholder Two</div>
-      <div class="project-card">Placeholder Three</div>
+      <div class="project-card">
+        <h3>PROJECT ONE</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="project-card">
+        <h3>PROJECT TWO</h3>
+        <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      </div>
+      <div class="project-card">
+        <h3>PROJECT THREE</h3>
+        <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Yu Heng</p>
+    <p>© 2025 Minimal Portfolio — All Rights Reserved</p>
   </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const dropdown = document.querySelector('.dropdown');
+
+    menuBtn.addEventListener('click', () => {
+      dropdown.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
