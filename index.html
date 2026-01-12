@@ -3,76 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minimal Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>Yu Heng - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="menu-container">
-      <button class="menu-btn">☰</button>
-      <div class="dropdown">
-        <a href="#">HOME</a>
-        <a href="#">INFO</a>
-        <a href="#">ABOUT</a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="dropdown" id="dropdown">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
         <a href="#projects">PROJECTS</a>
       </div>
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="hero-frame">
-      <h1>PORTFOLIO</h1>
-      <p class="hero-subtitle">SIMPLE & MINIMALISTIC</p>
+      <h1>YUHENG</h1>
+      <p class="hero-subtitle">
+        ASPIRING SOFTWARE DEVELOPER<span class="typing-cursor"></span>
+      </p>
     </div>
 
     <div class="btn-group">
-      <a href="#" class="btn-slide">CONTACT</a>
-      <a href="#" class="btn-slide">LINKEDIN</a>
-      <a href="#" class="btn-slide">GITHUB</a>
-      <a href="#" class="btn-slide">RESUME</a>
+      <a href="mailto:rixoth@gmail.com" class="btn-slide">CONTACT</a>
+      <a href="https://linkedin.com/in/yuheng-toh" target="_blank" class="btn-slide">LINKEDIN</a>
+      <a href="https://github.com/yhnothere" target="_blank" class="btn-slide">GITHUB</a>
+      <a href="Resume.pdf" target="_blank" class="btn-slide">RESUME</a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span></span>
     </div>
   </section>
 
-  <section class="about-section">
-    <h2>SO A LITTLE ABOUT ME</h2>
+  <section class="about-section" id="about">
+    <h2>A LITTLE ABOUT ME</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      As a passionate developer, I love building things that move, react, and engage. 
+      With a background in both custom game engine coding and web development, 
+      I enjoy the unique challenge of merging complex logic with immediate visual feedback. 
+      Whether I'm optimizing backend systems or crafting interactive web pages, 
+      my goal is to create elegant solutions that are as fun to use as they are robust to run.
     </p>
   </section>
 
+  <section class="skills-section" id="skills">
+    <h2>SKILLS & TECHNOLOGIES</h2>
+    <div class="skills-grid">
+      <div class="skill-item">C++</div>
+      <div class="skill-item">C#</div>
+      <div class="skill-item">GIT</div>
+      <div class="skill-item">PYTHON</div>
+      <div class="skill-item">HTML/CSS</div>
+      <div class="skill-item">JAVASCRIPT</div>
+      <div class="skill-item">REACT/VITE</div>
+      <div class="skill-item">NODE.JS</div>
+      <div class="skill-item">UNITY</div>
+      <div class="skill-item">UNREAL ENGINE</div>
+      <div class="skill-item">MICROSOFT EXCEL</div>
+      <div class="skill-item">ANDROID KOTLIN</div>
+    </div>
+  </section>
+
   <section id="projects">
-    <h2>PROJECTS</h2>
+    <h2>FEATURED PROJECTS</h2>
     <div class="projects-container">
       <div class="project-card">
-        <h3>PROJECT ONE</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3>POLYTECHNIC FINAL YEAR PROJECT</h3>
+        <p>
+          Ruin Hunters is a high-stakes multiplayer game built with Unity 3D and Photon Engine. 
+          Players navigate a dungeon to collect and steal loot from rivals. 
+          The core tension peaks during the "Collapse Event": when a hidden trap is triggered 
+          causing the ruins to begin self-destructing. Now players must decide whether to grab 
+          one last piece of treasure or run for their lives.
+        </p>
+        <div class="project-tags">
+          <span class="tag">C#</span>
+          <span class="tag">UNITY</span>
+          <span class="tag">PHOTON ENGINE</span>
+        </div>
+        <div class="project-links">
+          <a href="https://youtu.be/yhSzUSgohb0" target="_blank" class="project-link">
+            <span>▶</span> WATCH DEMO
+          </a>
+        </div>
       </div>
       <div class="project-card">
-        <h3>PROJECT TWO</h3>
-        <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-      </div>
-      <div class="project-card">
-        <h3>PROJECT THREE</h3>
-        <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+        <h3>2D CUSTOM GAME ENGINE</h3>
+        <p>
+          Slip Away is a physics-based platformer built entirely within our own custom-made 2D game engine. 
+          The game features a fluid slingshot mechanic inspired by Ori and the Blind Forest, 
+          allowing players to launch themselves through complex stages using momentum and precision. 
+          This project served as a technical demonstration of our engine's rendering and physics capabilities.
+        </p>
+        <div class="project-tags">
+          <span class="tag">C++</span>
+          <span class="tag">VISUAL STUDIO</span>
+          <span class="tag">OPENGL</span>
+          <span class="tag">IMGUI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://youtu.be/B4lyOpSkRWo" target="_blank" class="project-link">
+            <span>▶</span> WATCH DEMO
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Minimal Portfolio — All Rights Reserved</p>
+    <p>© 2025 YuHeng — Built with passion and code</p>
   </footer>
 
-  <script>
-    const menuBtn = document.querySelector('.menu-btn');
-    const dropdown = document.querySelector('.dropdown');
-
-    menuBtn.addEventListener('click', () => {
-      dropdown.classList.toggle('show');
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
